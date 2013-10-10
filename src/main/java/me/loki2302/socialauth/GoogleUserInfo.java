@@ -1,7 +1,5 @@
 package me.loki2302.socialauth;
 
-
-
 import me.loki2302.socialauth.impl.JsonUtils;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;

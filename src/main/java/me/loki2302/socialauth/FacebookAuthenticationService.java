@@ -21,8 +21,6 @@ import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
-/**
- * Facebook OAuth v.2 authenticator service */
 public class FacebookAuthenticationService {    
     private final static String FacebookAccessCodeServiceEndpointUri = "https://www.facebook.com/dialog/oauth";
     private final static String FacebookAccessTokenServiceEndpointUri = "https://graph.facebook.com/oauth/access_token";
@@ -34,11 +32,6 @@ public class FacebookAuthenticationService {
     private final String scope;
     private final String callbackUri;
     
-    /**
-     * @param clientId Facebook application id
-     * @param clientSecret Facebook application secret
-     * @param scope A space separated string with a list of desired scopes 
-     * @param callbackUri URL to redirect the user to once Facebook part is done */
     public FacebookAuthenticationService(
             String clientId, 
             String clientSecret, 
@@ -51,10 +44,6 @@ public class FacebookAuthenticationService {
         this.callbackUri = callbackUri;
     }
     
-    /**
-     * Get URI to redirect user to the Facebook authentication service. 
-     * 
-     * @return Facebook authentication service URI */
     public String getAuthenticationUri() {
         return oauth2Template.makeAuthenticationUri(
                 FacebookAccessCodeServiceEndpointUri, 
@@ -63,10 +52,6 @@ public class FacebookAuthenticationService {
                 scope);
     }
     
-    /**
-     * Get OAuth v.2 access token based on given code parameter 
-     * 
-     * @return OAuth v.2 access token */
     public String getAccessToken(String code) {
         String accessTokenResponse;
         try {
@@ -92,10 +77,6 @@ public class FacebookAuthenticationService {
         throw new RuntimeException("didn't expect to get this far");
     }
     
-    /**
-     * Get Facebook user details using provided access token
-     * 
-     * @return Facebook user details */
     public FacebookUserInfo getUserInfo(String accessToken) {
         String meUrl;
         try {
