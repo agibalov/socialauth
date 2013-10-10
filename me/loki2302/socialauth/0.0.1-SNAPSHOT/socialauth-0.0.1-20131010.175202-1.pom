@@ -6,14 +6,30 @@
 	<artifactId>socialauth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>socialauth</name>
-	<url>http://maven.apache.org</url>
+	<description>A minimalist social authentication library for Java</description>
+	<url>https://github.com/loki2302/socialauth</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<github.global.server>github</github.global.server>
 	</properties>
+	
+	<scm>
+		<url>https://github.com/loki2302/socialauth</url>
+		<connection>scm:git:git://github.com/loki2302/socialauth.git</connection>
+		<developerConnection>scm:git:git@github.com:loki2302/socialauth.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<developers>
+		<developer>
+			<id>loki2302</id>
+			<name>loki2302</name>
+			<email>loki2302@loki2302.me</email>
+			<timezone>+3</timezone>
+		</developer>
+	</developers>
 
 	<distributionManagement>
 		<repository>
