@@ -24,7 +24,7 @@ Add these to your pom.xml:
     ...
     <dependencies>
       <dependency>
-        <groupId>me.loki2302.socialauth</groupId>
+        <groupId>me.loki2302</groupId>
         <artifactId>socialauth</artifactId>
         <version>0.0.1-SNAPSHOT</version>
       </dependency>
