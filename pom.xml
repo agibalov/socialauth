@@ -3,7 +3,7 @@
 
 	<groupId>me.loki2302</groupId>
 	<artifactId>socialauth</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-STAGING</version>
 	<packaging>jar</packaging>
 	<name>socialauth</name>
 	<description>A minimalist social authentication library for Java</description>
