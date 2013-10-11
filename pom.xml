@@ -3,7 +3,7 @@
 
 	<groupId>me.loki2302</groupId>
 	<artifactId>socialauth</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<name>socialauth</name>
 	<description>A minimalist social authentication library for Java</description>
@@ -27,7 +27,7 @@
 		<url>https://github.com/loki2302/socialauth</url>
 		<connection>scm:git:git://github.com:loki2302/socialauth.git</connection>
 		<developerConnection>scm:git:git@github.com:loki2302/socialauth.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>socialauth-0.0.1</tag>
 	</scm>
 
 	<developers>
