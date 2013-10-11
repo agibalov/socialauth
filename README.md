@@ -11,22 +11,11 @@ Simple social authentication library for Java:
 ### Maven
 Add these to your pom.xml:
 
-    <repositories>
-      <repository>
-        <id>soacialauth-mvn-repo</id>
-        <url>https://raw.github.com/loki2302/socialauth/mvn-repo/</url>
-        <snapshots>
-          <enabled>true</enabled>
-          <updatePolicy>always</updatePolicy>
-        </snapshots>
-      </repository>
-    </repositories>
-    ...
     <dependencies>
       <dependency>
         <groupId>me.loki2302</groupId>
         <artifactId>socialauth</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
       </dependency>
     </dependencies>
 
